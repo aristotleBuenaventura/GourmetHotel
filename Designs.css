@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Open+Sans+Condensed:wght@300&display=swap');
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+
+    background-image: url(images/bg.jpg);
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+
+    margin: 0;
+
+    height: 100%;
+
+}
+
+
+.overlay {
+
+    position: absolute;
+
+    min-height: 100%;
+
+    min-width: 100%;
+
+    left: 0;
+
+    top: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+footer {
+    font-family: poppins;
+}
+
+footer h6 {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-reset:hover  {
+    text-decoration: none;
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+.Message {
+
+    left: 50%;
+
+    position: absolute;
+
+    top: 45%;
+
+    transform: translate(-50%, -55%);
+    font-family: 'Open Sans Condensed', sans-serif;
+
+    text-align: center;
+
+}
+
+
+.Message h1 {
+
+    color: rgb(255, 255, 255);
+}
+
+
+.Message p {
+
+    color: rgb(255, 255, 255);
+
+    font-size: 1.2rem;
+
+    line-height: 1.5;
+
+}
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+nav {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1.2s;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24),0 12px 20px 0 rgba(0,0,0,0.19);
+    font-family: poppins;
+  
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .navbar.black {
+    background: rgb(36,36,36);
+  }
+  
+  .nav-item {
+    display: inline-block;
+    padding: 20px;
+  }
+  
+  .nav-link {
+    transition-duration: 0.4s;
+  }
+  
+  .nav-link:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .nav-item button {
+    background: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    border: none;
+  }
+  
+  .navbar-brand {
+    border-right: 1px solid #f5f5f5;
+    border-radius: 0.5px;
+  }
+
+  /* mega drop down menu */
+
+.megaMenu {
+    position: static;
+  }
+  
+  .dropdown-menu {
+    width: 80%;
+    margin-top: 0;
+    border: 0;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;  
+    animation: rotateX 0.3s ease-in-out forwards;
+    transform-origin: top center;
+    justify-items: center;
+    margin-left: 10%;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  @keyframes rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+      }
+      50% {
+        transform: rotateX(-20deg);
+      }
+      100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+    
+  }
+  .dropdown-item, .dropdown-item img {
+    border-radius: 4px;
+    padding: 4px;
+  }
+  
+  .dropdown-item:hover {
+    color:white;
+    background: #333;
+    transition-duration: 0.5s;
+  
+  }
+
+.QuickNav {
+
+    font-size: 1.343rem;
+
+}
+
+
+.QuickNav ul {
+
+    margin: .8rem;
+
+}
+
+
+.QuickNav li {
+
+    display: inline;
+
+    background-color: black;
+
+    margin: 0.5rem;
+
+    padding: 6px;
+
+    border-radius: 8px;
+
+}
+
+
+.cards {
+
+    background-color: white;
+
+    padding: 1.3rem;
+
+    margin: 0;
+
+    width: 100%;
+
+    position: absolute;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.about{
+
+    background: url(images/AboutUs1.jpg) no-repeat left;
+
+    background-size: 55%;
+
+    background-color: #949292;
+
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+.about, .about2, .about3 h1 {
+  font-size: 60px;
+
+}
+
+
+.about p {
+
+    font-size: 20px;
+
+}
+
+
+.about2{
+
+    background: url(images/img1.jpg) no-repeat right; /* Placeholder, palitan nalang yung image nang something na pwedeng ilagay dyan sa Who we are. Like yung Logo nalang dito */
+
+    background-size: 55%;
+
+    background-color: #949292;
+
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+.about2 p {
+    font-size: 20px;
+
+}
+
+
+.about3{
+
+    background: url(images/svc.jpeg) no-repeat left;
+
+    background-size: 55%;
+
+    background-color: #949292;
+
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+.about3 p {
+    font-size: 20px;
+
+}
+
+
+.inner-section{
+
+    width: 55%;
+
+    float: right;
+
+    background-color: #fdfdfd;
+
+    padding: 140px;
+
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+
+
+.inner-section2{
+
+    width: 55%;
+
+    float: left;
+
+    background-color: #fdfdfd;
+
+    padding: 140px;
+
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+
+
+.inner-section h1{
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+}
+
+
+.inner-section2 h1{
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+}
+
+
+.text{
+    font-size: 13px;
+
+    color: #545454;
+
+    line-height: 30px;
+
+    text-align: justify;
+
+    margin-bottom: 40px;
+
+}
+
+
+.skills button{
+
+    font-size: 22px;
+
+    text-align: center;
+
+    letter-spacing: 2px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 8px;
+
+    width: 200px;
+
+    background-color: #00999c;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+.skills button:hover{
+
+    transition: 1s;
+
+    background-color: #ecf5f5;
+
+    color: #00999c;
+
+}
+
+
+@media screen and (max-width:1200px){
+
+    .inner-section{
+
+        padding: 80px;
+
+    }
+}
+
+
+@media screen and (max-width:1000px){
+
+    .about{
+
+        background-size: 100%;
+
+        padding: 100px 40px;
+
+    }
+
+    .inner-section{
+
+        width: 100%;
+
+    }
+}
+
+
+@media screen and (max-width:600px){
+
+    .about{
+
+        padding: 0;
+
+    }
+
+    .inner-section{
+
+        padding: 60px;
+
+    }
+
+    .skills button{
+
+        font-size: 19px;
+
+        padding: 5px;
+
+        width: 160px;
+
+    }
+}
+
+@font-face {
+
+    font-family: poppins;
+
+    src: url("font/Poppins-Light.ttf");
+
+}
+  
+

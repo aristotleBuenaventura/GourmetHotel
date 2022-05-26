@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Open+Sans+Condensed:wght@300&family=Zen+Kurenaido&display=swap');
+html,body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+  overflow-x: hidden;
+}
+
+nav {
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1.2s;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24),0 12px 20px 0 rgba(0,0,0,0.19);
+  font-family: poppins;
+
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar.black {
+  background: rgb(36,36,36);
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 20px;
+}
+
+.nav-link {
+  transition-duration: 0.4s;
+}
+
+.nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-item button {
+  background: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  border: none;
+}
+
+.navbar-brand {
+  border-right: 1px solid #f5f5f5;
+  border-radius: 0.5px;
+}
+
+/* mega drop down menu */
+
+.megaMenu {
+  position: static;
+}
+
+.dropdown-menu {
+  width: 80%;
+  margin-top: 0;
+  border: 0;
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;  
+  animation: rotateX 0.3s ease-in-out forwards;
+  transform-origin: top center;
+  justify-items: center;
+  margin-left: 10%;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@keyframes rotateX {
+  0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    50% {
+      transform: rotateX(-20deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+  }
+  
+}
+.dropdown-item, .dropdown-item img {
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.dropdown-item:hover {
+  color:white;
+  background: #333;
+  transition-duration: 0.5s;
+}
+
+.container {
+width: 80%;
+display: block;
+margin:auto;
+position: relative;
+font-family: poppins;
+}
+
+.header {
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: repeat;
+  transition: 20s;
+  animation: infinite alternate;
+  animation-name: animate;
+  animation-duration: 40s;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-play-state:  running;
+  animation-timing-function: ease-in-out;
+}
+
+  @keyframes animate{
+    0% {
+      background-image: url(images/pull.jpg);
+    }
+
+    20% {
+      background-image: url(images/view.jpg);
+    }
+    40% {
+      background-image: url(images/img1.jpg);
+    }
+    60% {
+      background-image: url(images/svc.jpeg);
+    }
+    80% {
+      background-image: url(images/hotel.jpg);
+    }
+    100% {
+      background-image: url(images/img4.jpg);
+    }
+}
+
+.description {
+
+left: 53%;
+position: relative;
+top: 70%;
+font-family: poppins;
+transform: translate(-50%, -55%);
+
+  text-align: left;
+
+}
+
+
+
+.description h1 {
+  color: white  ;
+  font-size: 60px;
+
+}
+
+
+
+.description p {
+
+  color: #fff;
+
+  font-size: 1.3rem;
+
+  line-height: 1.5;
+
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.fa-instagram {
+    color:blueviolet;
+}
+
+.container a {
+    text-decoration: none;
+}
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width:600px;
+	height:400px;;
+
+}
+
+.content-section .title h1{
+font-size: 50px;
+font-family: poppins;
+}
+.content-section .content h5{
+	margin-top: 20px;
+	color:#5d5d5d;
+  font-size: 25px;
+  font-family: poppins;
+}
+.content-section .content p{
+	margin-top: 10px;
+  font-family: poppins;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+    margin-top: 100px;
+  	float:none;
+  	width:100%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+
+  }
+
+
+.team-section{
+  width: 100%;
+}
+.team-section .team-container {
+  width: 80%;
+  margin: auto;
+}
+.team-section .team-container .row {
+  width: 60%;
+  margin: auto;
+}
+.team-section .team-container .row .team-title {
+  text-align: center;
+  margin-top: 50px;
+}
+.team-section .team-container .row .team-title h1 {
+font-size: 35px;
+font-family: poppins;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+color: black;
+}
+.team-section .team-container .row .team-title p {
+  font-family: poppins;
+  font-size: 20px;
+  margin: 30px 0px;
+  color:black;
+}
+
+.team-section .team-container .team-card {
+width: 100%;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 40px;
+margin-top: 50px;
+}
+
+.team-section .team-container .team-card .cardd{
+width: 100%;
+background-color: #fafafa;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+cursor: pointer;
+}
+
+.team-section .team-container .team-card .cardd:hover{
+background-color: #f3f3f3;
+transition: 0.3s;
+}
+
+.team-section .team-container .team-card .cardd .image-section img {
+height: 150px;
+width: 150px;
+border-radius: 50%;
+border: 6px solid #fff;
+}
+.team-section .team-container .team-card .cardd .team-content{
+width: 100%;
+text-align: center;
+}
+.team-section .team-container .team-card .cardd .team-content h3{
+font-family: poppins;
+font-size: 35px;
+margin-top: 10px;
+letter-spacing: 1.5px;
+color:#00A2AF;
+}
+.team-section .team-container .team-card .cardd .team-content h4{
+  font-family: poppins;
+  font-size: 20px;
+  margin-top: 10px;
+  letter-spacing: 1.5px;
+  color: #6e6e6e;
+}
+.team-section .team-container .team-card .cardd .team-content p{
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+  margin: 16px 0px;
+  line-height:1.5;
+  color: #6e6e6e;
+}
+
+@media screen and (max-width: 900px) {
+  .team-section .team-container .team-card {
+
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+@media screen and (max-width: 760px) {
+  .team-section .team-container .team-card {
+
+  grid-template-columns: 1fr;
+}
+}
+
+@font-face {
+
+  font-family: poppins;
+
+  src: url("font/Poppins-Light.ttf");
+
+}
+

@@ -1,0 +1,16 @@
+GUYS PARA MAGWORK DAPAT MAY DATABASE KAYO NA TULAD SA FORMAT KO
+
+STRUCTURE NAME: login_register
+TABLE NAME: users
+COLUMN NAMES: id, username, email, password, role
+
+add another column for the image database, must be placed after password
+
+COLUMN NAME: image1
+
+STRUCTURE NAME: inquiry
+TABLE NAME: userinput
+COLUMN NAMES: id, name, email, message
+
+message must be set as longtext with 10000 values
+
